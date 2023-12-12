@@ -1,0 +1,9 @@
+{
+    "name": "kfwhyp/yfw_route",
+    "autoload": {
+        "psr-4": {
+            "Kfwhyp\\YfwRoute\\": "src/"
+        }
+    },
+    "require": {}
+}
