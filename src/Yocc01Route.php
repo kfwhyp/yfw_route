@@ -13,6 +13,7 @@
 
 namespace Kfwhyp\YfwRoute;
 
+use Yaf\Route_Interface;
 
 /**
  * Yaf 框架, Dagger 路由 
