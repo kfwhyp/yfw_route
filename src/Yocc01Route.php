@@ -14,6 +14,7 @@
 namespace Kfwhyp\YfwRoute;
 
 use Yaf\Route_Interface;
+use Yaf\Application;
 
 /**
  * Yaf 框架, Dagger 路由 
@@ -83,7 +84,8 @@ class Yocc01Route implements Route_Interface
         self::$info['query'] = trim($query); 
 
         // conf/application.ini, application.modules, 从配置找到 module 节
-        $modules = Yaf\Application::app()->getModules();
+        //$modules = Yaf\Application::app()->getModules();
+        $modules = Application::app()->getModules();
         foreach ($modules as $k => $v) {
             // module, base
             $pos = strpos($path, lcfirst($v));
@@ -130,7 +132,8 @@ class Yocc01Route implements Route_Interface
             return false;
         }
 
-        $modus = Yaf\Application::app()->getModules();
+        //$modus = Yaf\Application::app()->getModules();
+        $modus = Application::app()->getModules();
         if (!in_array(self::$info['module'], $modus)) {
             return false;
         }
