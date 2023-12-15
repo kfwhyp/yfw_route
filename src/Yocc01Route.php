@@ -13,15 +13,16 @@
 
 namespace Kfwhyp\YfwRoute;
 
-use Yaf\Route_Interface;
+//use Yaf\Route_Interface;
 use Yaf\Application;
 
 /**
  * Yaf 框架, Dagger 路由 
  *
  */
+class Yocc01Route implements Yaf\Route_Interface
 //class Yocc01Route implements \Yaf\Route_Interface
-class Yocc01Route implements Route_Interface
+//class Yocc01Route implements Route_Interface
 {
 
 
